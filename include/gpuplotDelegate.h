@@ -15,7 +15,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
-- (IBAction)subdivisionSliderChanged:(id)sender;
-- (IBAction)colorChanged:(id)sender;
+- (IBAction)textEditChanged:(id)sender;
 
 @end

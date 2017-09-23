@@ -16,21 +16,17 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
-		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		EB08DB7A210B4E27999BA7EC /* Osc.h in Headers */ = {isa = PBXBuildFile; fileRef = 89897D0DFF0444BE975B361A /* Osc.h */; };
-		B69FBB440C28470581DC4293 /* Osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 065FB24494034E948427A5B0 /* Osc.cpp */; };
-		99701E7FC03A4CED9E54D74B /* Cairo.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE05D91641548DB8D15BB35 /* Cairo.h */; };
-		639181ECF6B645389952F661 /* Cairo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6252A18D14440FBB6C2D977 /* Cairo.cpp */; };
-		900E88170AEB4723A1D5B8A4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EED9588846DA9D35AFC6 /* MainMenu.xib */; };
-		E692CECA8F604E14B03593F6 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ED75C12E2497BA78808AF /* CinderApp.icns */; };
-		6B3B4792C2084F869D7E526D /* gpuplot_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 62E68A48EC044E00BFE3EE3D /* gpuplot_Prefix.pch */; };
-		D78B92AF9B5E487787C8D712 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2A399443604C1FA50809CF /* Resources.h */; };
-		7CFB3481F3E84CF7BA4FEFBE /* gpuplotDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 19874FBBE7B344B38701E260 /* gpuplotDelegate.h */; };
-		963616E843C24D72BFCE6DD6 /* gpuplotApp.h in Headers */ = {isa = PBXBuildFile; fileRef = F87DAC0206794004B4B56C39 /* gpuplotApp.h */; };
-		5F5B2CF43EF94CB28F373567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A5427B4694DC8A88B9ADB /* main.m */; };
-		9459CEB75DA046A89F086671 /* gpuplotDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8BBC5F1DFE64509884513C9 /* gpuplotDelegate.mm */; };
 		04ADFEB456034FAC82063244 /* gpuplotApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4BAFEC1DF4A4F739E66F52E /* gpuplotApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5F5B2CF43EF94CB28F373567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A5427B4694DC8A88B9ADB /* main.m */; };
+		639181ECF6B645389952F661 /* Cairo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6252A18D14440FBB6C2D977 /* Cairo.cpp */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		900E88170AEB4723A1D5B8A4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B7EED9588846DA9D35AFC6 /* MainMenu.xib */; };
+		9459CEB75DA046A89F086671 /* gpuplotDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8BBC5F1DFE64509884513C9 /* gpuplotDelegate.mm */; };
+		B69FBB440C28470581DC4293 /* Osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 065FB24494034E948427A5B0 /* Osc.cpp */; };
+		D0C2537C1F7621250062B812 /* shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = D0C2537A1F7621250062B812 /* shader.frag */; };
+		D0C2537D1F7621250062B812 /* shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = D0C2537B1F7621250062B812 /* shader.vert */; };
+		E692CECA8F604E14B03593F6 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ED75C12E2497BA78808AF /* CinderApp.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,25 +39,27 @@
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		065FB24494034E948427A5B0 /* Osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Osc.cpp; path = ../blocks/OSC/src/cinder/osc/Osc.cpp; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		19874FBBE7B344B38701E260 /* gpuplotDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gpuplotDelegate.h; path = ../include/gpuplotDelegate.h; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2E1ED75C12E2497BA78808AF /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		558BDD39B6834C0BA69C5118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E68A48EC044E00BFE3EE3D /* gpuplot_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = gpuplot_Prefix.pch; sourceTree = "<group>"; };
+		79B7EED9588846DA9D35AFC6 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = MainMenu.xib; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7E2A399443604C1FA50809CF /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		89897D0DFF0444BE975B361A /* Osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Osc.h; path = ../blocks/OSC/src/cinder/osc/Osc.h; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* gpuplot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpuplot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4BAFEC1DF4A4F739E66F52E /* gpuplotApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/gpuplotApp.cpp; sourceTree = "<group>"; name = gpuplotApp.cpp; };
-		C8BBC5F1DFE64509884513C9 /* gpuplotDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ../src/gpuplotDelegate.mm; sourceTree = "<group>"; name = gpuplotDelegate.mm; };
-		B23A5427B4694DC8A88B9ADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ../src/main.m; sourceTree = "<group>"; name = main.m; };
-		F87DAC0206794004B4B56C39 /* gpuplotApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/gpuplotApp.h; sourceTree = "<group>"; name = gpuplotApp.h; };
-		19874FBBE7B344B38701E260 /* gpuplotDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/gpuplotDelegate.h; sourceTree = "<group>"; name = gpuplotDelegate.h; };
-		7E2A399443604C1FA50809CF /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		62E68A48EC044E00BFE3EE3D /* gpuplot_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = gpuplot_Prefix.pch; sourceTree = "<group>"; name = gpuplot_Prefix.pch; };
-		2E1ED75C12E2497BA78808AF /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		79B7EED9588846DA9D35AFC6 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; name = MainMenu.xib; };
-		558BDD39B6834C0BA69C5118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		D6252A18D14440FBB6C2D977 /* Cairo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Cairo/src/Cairo.cpp; sourceTree = "<group>"; name = Cairo.cpp; };
-		ACE05D91641548DB8D15BB35 /* Cairo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Cairo/include/cinder/cairo/Cairo.h; sourceTree = "<group>"; name = Cairo.h; };
-		065FB24494034E948427A5B0 /* Osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/OSC/src/cinder/osc/Osc.cpp; sourceTree = "<group>"; name = Osc.cpp; };
-		89897D0DFF0444BE975B361A /* Osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/OSC/src/cinder/osc/Osc.h; sourceTree = "<group>"; name = Osc.h; };
+		ACE05D91641548DB8D15BB35 /* Cairo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Cairo.h; path = ../blocks/Cairo/include/cinder/cairo/Cairo.h; sourceTree = "<group>"; };
+		B23A5427B4694DC8A88B9ADB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = main.m; path = ../src/main.m; sourceTree = "<group>"; };
+		C8BBC5F1DFE64509884513C9 /* gpuplotDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = gpuplotDelegate.mm; path = ../src/gpuplotDelegate.mm; sourceTree = "<group>"; };
+		D0C2537A1F7621250062B812 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader.frag; path = ../resources/shader.frag; sourceTree = "<group>"; };
+		D0C2537B1F7621250062B812 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader.vert; path = ../resources/shader.vert; sourceTree = "<group>"; };
+		D4BAFEC1DF4A4F739E66F52E /* gpuplotApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = gpuplotApp.cpp; path = ../src/gpuplotApp.cpp; sourceTree = "<group>"; };
+		D6252A18D14440FBB6C2D977 /* Cairo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Cairo.cpp; path = ../blocks/Cairo/src/Cairo.cpp; sourceTree = "<group>"; };
+		F87DAC0206794004B4B56C39 /* gpuplotApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gpuplotApp.h; path = ../include/gpuplotApp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				7305352E44044F1E9D7A0435 /* Cairo */,
+				E20503369F1D40C6B06ED3BB /* OSC */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +130,14 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		11285871C2944EC2B47F2BC2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D6252A18D14440FBB6C2D977 /* Cairo.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,89 +159,6 @@
 			name = gpuplot;
 			sourceTree = "<group>";
 		};
-		11285871C2944EC2B47F2BC2 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				D6252A18D14440FBB6C2D977 /* Cairo.cpp */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
-		52726232A9224F5EB433AF0C /* cairo */ = {
-			isa = PBXGroup;
-			children = (
-				ACE05D91641548DB8D15BB35 /* Cairo.h */,
-			);
-			name = cairo;
-			sourceTree = "<group>";
-		};
-		6FE5B502E2A94D96A821871D /* cinder */ = {
-			isa = PBXGroup;
-			children = (
-				52726232A9224F5EB433AF0C /* cairo */,
-			);
-			name = cinder;
-			sourceTree = "<group>";
-		};
-		355B8EA7D20C4D73818C6242 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				6FE5B502E2A94D96A821871D /* cinder */,
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		7305352E44044F1E9D7A0435 /* Cairo */ = {
-			isa = PBXGroup;
-			children = (
-				11285871C2944EC2B47F2BC2 /* src */,
-				355B8EA7D20C4D73818C6242 /* include */,
-			);
-			name = Cairo;
-			sourceTree = "<group>";
-		};
-		63ED10BFDD144880B76900F0 /* osc */ = {
-			isa = PBXGroup;
-			children = (
-				065FB24494034E948427A5B0 /* Osc.cpp */,
-				89897D0DFF0444BE975B361A /* Osc.h */,
-			);
-			name = osc;
-			sourceTree = "<group>";
-		};
-		CC1ADE46C01C4A5E92190E52 /* cinder */ = {
-			isa = PBXGroup;
-			children = (
-				63ED10BFDD144880B76900F0 /* osc */,
-			);
-			name = cinder;
-			sourceTree = "<group>";
-		};
-		58D0C65022364B3D9C9D4F01 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				CC1ADE46C01C4A5E92190E52 /* cinder */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
-		E20503369F1D40C6B06ED3BB /* OSC */ = {
-			isa = PBXGroup;
-			children = (
-				58D0C65022364B3D9C9D4F01 /* src */,
-			);
-			name = OSC;
-			sourceTree = "<group>";
-		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				7305352E44044F1E9D7A0435 /* Cairo */,
-				E20503369F1D40C6B06ED3BB /* OSC */,
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +173,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0C2537A1F7621250062B812 /* shader.frag */,
+				D0C2537B1F7621250062B812 /* shader.vert */,
 				2E1ED75C12E2497BA78808AF /* CinderApp.icns */,
 				79B7EED9588846DA9D35AFC6 /* MainMenu.xib */,
 				558BDD39B6834C0BA69C5118 /* Info.plist */,
@@ -255,6 +189,72 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		355B8EA7D20C4D73818C6242 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5B502E2A94D96A821871D /* cinder */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		52726232A9224F5EB433AF0C /* cairo */ = {
+			isa = PBXGroup;
+			children = (
+				ACE05D91641548DB8D15BB35 /* Cairo.h */,
+			);
+			name = cairo;
+			sourceTree = "<group>";
+		};
+		58D0C65022364B3D9C9D4F01 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CC1ADE46C01C4A5E92190E52 /* cinder */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		63ED10BFDD144880B76900F0 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				065FB24494034E948427A5B0 /* Osc.cpp */,
+				89897D0DFF0444BE975B361A /* Osc.h */,
+			);
+			name = osc;
+			sourceTree = "<group>";
+		};
+		6FE5B502E2A94D96A821871D /* cinder */ = {
+			isa = PBXGroup;
+			children = (
+				52726232A9224F5EB433AF0C /* cairo */,
+			);
+			name = cinder;
+			sourceTree = "<group>";
+		};
+		7305352E44044F1E9D7A0435 /* Cairo */ = {
+			isa = PBXGroup;
+			children = (
+				11285871C2944EC2B47F2BC2 /* src */,
+				355B8EA7D20C4D73818C6242 /* include */,
+			);
+			name = Cairo;
+			sourceTree = "<group>";
+		};
+		CC1ADE46C01C4A5E92190E52 /* cinder */ = {
+			isa = PBXGroup;
+			children = (
+				63ED10BFDD144880B76900F0 /* osc */,
+			);
+			name = cinder;
+			sourceTree = "<group>";
+		};
+		E20503369F1D40C6B06ED3BB /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				58D0C65022364B3D9C9D4F01 /* src */,
+			);
+			name = OSC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +283,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "gpuplot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -307,6 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2537C1F7621250062B812 /* shader.frag in Resources */,
+				D0C2537D1F7621250062B812 /* shader.vert in Resources */,
 				E692CECA8F604E14B03593F6 /* CinderApp.icns in Resources */,
 				900E88170AEB4723A1D5B8A4 /* MainMenu.xib in Resources */,
 			);
@@ -334,17 +338,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = gpuplot_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = gpuplot_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -371,12 +375,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = gpuplot_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = gpuplot_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -398,7 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../Documents/Cinder/cinder_0.9.1_mac";
+				CINDER_PATH = ../../../Documents/Cinder/cinder_0.9.1_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -411,11 +415,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/Cairo/include,
-					../blocks/OSC/src,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/Cairo/include ../blocks/OSC/src";
 			};
 			name = Debug;
 		};
@@ -423,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../Documents/Cinder/cinder_0.9.1_mac";
+				CINDER_PATH = ../../../Documents/Cinder/cinder_0.9.1_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -434,11 +434,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/Cairo/include,
-					../blocks/OSC/src,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/Cairo/include ../blocks/OSC/src";
 			};
 			name = Release;
 		};

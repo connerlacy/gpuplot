@@ -22,19 +22,11 @@
 	mApp->launch();
 
 	[window setAcceptsMouseMovedEvents:YES];
-
-	colorWell.color = [NSColor colorWithCalibratedRed:mApp->mColor.r green:mApp->mColor.g blue:mApp->mColor.b alpha:1.0f];
 }
 
-- (IBAction)subdivisionSliderChanged:(id)sender
+- (IBAction)textEditChanged:(id)sender
 {
-	mApp->mRadius = [sender intValue];
-}
-
-- (IBAction)colorChanged:(id)sender
-{
-	NSColor *color = [sender color];
-	mApp->mColor = ci::Colorf( [color redComponent], [color greenComponent], [color blueComponent] );
+    mApp->console() << "text changed\n";
 }
 
 @end
