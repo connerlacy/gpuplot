@@ -2,7 +2,7 @@
 
 uniform sampler2D uTex0;
 uniform float utime;
-uniform float uVal[100];
+uniform float uVal[1000];
 
 in vec4		Color;
 in vec3		Normal;
@@ -66,7 +66,7 @@ void main( void )
     
     utime;
     
-    int index = int(fragXY.x * 100.0);
+    int index = int(fragXY.x * 1000.0);
     
     // Plot a line
     float pct = plot(fragXY, uVal[index]);

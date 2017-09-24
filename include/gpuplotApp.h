@@ -9,6 +9,8 @@ using namespace ci::app;
 using namespace std;
 using namespace cinder;
 
+#define PLOT_NUM_POINTS 1000
+
 #define USE_UDP 1
 
 #if USE_UDP

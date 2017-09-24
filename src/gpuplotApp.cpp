@@ -22,7 +22,7 @@ void Graph::init()
     //glsl->bind();
     //batch = gl::Batch::create( geom::Rect().rect(Area(0,0,500,500)), glsl );
     //mGlsl->bind();
-    for(int i =0; i < 100; i++) { fifo.push_back(i); buf.push_back(i); }
+    for(int i =0; i < PLOT_NUM_POINTS; i++) { fifo.push_back(i); buf.push_back(i); }
 }
 
 void Graph::setValue(float v)
@@ -64,7 +64,7 @@ void Graph::draw()
     //gl::ScopedGlslProg s(glsl);
     glsl->bind();
     glsl->uniform("utime", (float)getElapsedSeconds());
-    glsl->uniform("uVal", buf.data(), 100);
+    glsl->uniform("uVal", buf.data(), PLOT_NUM_POINTS);
     //batch->draw();
     
     gl::drawSolidRect(Rectf(pos, pos + size));
