@@ -48,12 +48,16 @@ public:
 class gpuplotApp : public cinder::app::AppCocoaView {
   public:
     gpuplotApp();
-	void setup() override;
+	void setup()  override;
     void update() override;
-    void draw() override;
+    void draw()   override;
+    void oscParse(const osc::Message &msg);
+    void setGraphAddress(int graphIndex, std::string address);
 
-    Receiver 	receiver;
+    Receiver receiver;
     
-    std::vector<Graph> graphs;
-    std::list<float> vals;
+    std::map<std::string, Graph> addressMap;
+    std::vector<Graph>           graphs;
+    std::vector<std::string>     addresses;
+    std::list<float>   vals;
 };

@@ -26,7 +26,10 @@
 
 - (IBAction)textEditChanged:(id)sender
 {
-    mApp->console() << "text changed\n";
+    static bool oneshot = false;
+    
+    if(!oneshot){ oneshot = true; return;}
+    mApp->setGraphAddress([sender tag], std::string([[(NSTextField*)sender stringValue] UTF8String]));
 }
 
 @end

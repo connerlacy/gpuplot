@@ -72,7 +72,25 @@ void Graph::draw()
 
 gpuplotApp::gpuplotApp() : receiver(localPort)
 {
+}
 
+void gpuplotApp::setGraphAddress(int graphIndex, std::string address)
+{
+    addresses[graphIndex] = address;
+}
+
+void gpuplotApp::oscParse(const osc::Message &msg)
+{
+    int i = 0;
+    for(auto a : addresses)
+    {
+        if(a == msg.getAddress())
+        {
+            graphs[i].setValue(msg[0].flt());
+            break;
+        }
+        i++;
+    }
 }
 
 void gpuplotApp::setup()
@@ -80,6 +98,8 @@ void gpuplotApp::setup()
     for(int i =0; i < 4; i++)
     {
         graphs.push_back(Graph(i));
+        addresses.push_back("/graph" + std::to_string(i));
+        //setGraphAddress(i, addresses.back());
     }
     
     try {
@@ -100,21 +120,7 @@ void gpuplotApp::setup()
                             return true;
                     });
     
-    receiver.setListener( "/test",
-                          [&]( const osc::Message &msg ){
-                              graphs[0].setValue(msg[0].flt());
-                              console() << msg[0].flt() << std::endl;
-                          });
-    receiver.setListener( "/mouseclick/1",
-                          [&]( const osc::Message &msg ){
-                              //mCurrentSquarePos = vec2( msg[0].flt(), msg[1].flt() ) * vec2( getWindowSize() );
-                          });
-    
-
-
-
-     
-
+    receiver.setListener( "*", std::bind(&gpuplotApp::oscParse, this, std::placeholders::_1));
 }
 
 void gpuplotApp::update()
